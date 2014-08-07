@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorfulButton">
+        <attr name="shape" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="rectangle" value="1" />
+        </attr>
+        <!-- Delete Later On -->
+        <attr name="zdepth" format="enum">
+            <enum name="none" value="0" />
+            <enum name="one" value="1" />
+            <enum name="two" value="2" />
+            <enum name="three" value="3" />
+            <enum name="four" value="4" />
+            <enum name="five" value="5" />
+        </attr>
+        <attr name="primary_color" format="reference" />
+        <attr name="pressed_color" format="reference" />
+        <attr name="pressed_alpha" format="boolean" />
+        <attr name="icon_drawable" format="reference" />
+        <attr name="typeface_path" format="string" />
+
+
+
+
+    </declare-styleable>
+</resources>

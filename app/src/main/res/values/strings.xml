@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FloatingButtonL</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ab_typeface_path_regular">fonts/CaviarDreams.ttf</string>
+    <string name="ab_typeface_path_bold">fonts/CaviarDreams_Bold.ttf</string>
+
+</resources>

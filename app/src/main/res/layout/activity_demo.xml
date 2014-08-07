@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity">
+
+    <com.mmarquez.colorful.ColorfulCircularButton
+
+        cb:primary_color="@color/teal"
+        cb:pressed_color="@color/cyan"
+        cb:shape="circle"
+        cb:pressed_alpha="false"
+        cb:zdepth="two"
+        cb:icon_drawable="@drawable/ic_action_name"
+        android:id="@+id/lbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="right|bottom" />
+
+    <com.mmarquez.colorful.ColorfulTextButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:text="English"
+        cb:typeface_path="@string/ab_typeface_path_regular"
+        cb:zdepth="one"
+        cb:pressed_alpha="false"
+        cb:primary_color="@color/teal"
+        cb:pressed_color="@color/cyan"
+        android:textColor="@android:color/white"
+
+        android:layout_gravity="center" />
+
+
+</FrameLayout>
