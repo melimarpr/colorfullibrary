@@ -1,6 +1,8 @@
 package com.mmarquez.colorful;
 
+import android.content.Context;
 import android.graphics.Color;
+import android.util.DisplayMetrics;
 
 /**
  * Created by enrique on 8/6/14.
@@ -32,9 +34,24 @@ public enum ZDepth {
         }
     }
 
-    public static ShadowValue getShadowValues(ZDepth zDepth){
-        //TODO Change Demo
-        return new ShadowValue(5f, 0.0f, 5.0f, Color.argb(100, 0, 0, 0));
+    public static ShadowValue getShadowValues( ZDepth zDepth){
+
+        switch (zDepth){
+            case TWO:
+                return new ShadowValue(12f, 0.0f, 4.0f, Color.argb(115, 0, 0, 0));
+            case THREE:
+                return new ShadowValue(16f, 0.0f, 6.0f, Color.argb(115, 0, 0, 0));
+            case FOUR:
+                return new ShadowValue(20f, 0.0f, 8.0f, Color.argb(130, 0, 0, 0));
+            case FIVE:
+                return new ShadowValue(24f, 0.0f, 10.0f, Color.argb(130, 0, 0, 0));
+            default:
+                return new ShadowValue(8f, 0.0f, 4.0f, Color.argb(100, 0, 0, 0));
+
+
+        }
+
+
     }
 
     public static class ShadowValue{

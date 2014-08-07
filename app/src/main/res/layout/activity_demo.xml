@@ -1,12 +1,33 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:cb="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".DemoActivity" >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".DemoActivity">
 
-    <com.mmarquez.colorful.ColorfulCircularButton
+    <com.mmarquez.colorful.ColorfulTextButton
+
+        cb:primary_color="@color/teal"
+        cb:pressed_color="@color/cyan"
+        cb:shape="circle"
+        cb:pressed_alpha="false"
+        cb:zdepth="one"
+        cb:icon_drawable="@drawable/ic_action_name"
+        android:id="@+id/lbutton1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center" />
+
+    <com.mmarquez.colorful.ColorfulTextButton
 
         cb:primary_color="@color/teal"
         cb:pressed_color="@color/cyan"
@@ -14,26 +35,60 @@
         cb:pressed_alpha="false"
         cb:zdepth="two"
         cb:icon_drawable="@drawable/ic_action_name"
-        android:id="@+id/lbutton"
+        android:id="@+id/lbutton2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_gravity="right|bottom" />
+        android:layout_gravity="center" />
 
     <com.mmarquez.colorful.ColorfulTextButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_action_name"
-        android:text="English"
-        cb:typeface_path="@string/ab_typeface_path_regular"
-        cb:zdepth="one"
-        cb:pressed_alpha="false"
+
         cb:primary_color="@color/teal"
         cb:pressed_color="@color/cyan"
-        android:textColor="@android:color/white"
+        cb:shape="circle"
+        cb:pressed_alpha="false"
+        cb:zdepth="three"
+        cb:icon_drawable="@drawable/ic_action_name"
+        android:id="@+id/lbutton3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center" />
 
+    <com.mmarquez.colorful.ColorfulTextButton
+
+        cb:primary_color="@color/teal"
+        cb:pressed_color="@color/cyan"
+        cb:shape="circle"
+        cb:pressed_alpha="false"
+        cb:zdepth="four"
+        cb:icon_drawable="@drawable/ic_action_name"
+        android:id="@+id/lbutton4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center" />
+
+    <com.mmarquez.colorful.ColorfulTextButton
+
+        cb:primary_color="@color/teal"
+        cb:pressed_color="@color/cyan"
+        cb:shape="circle"
+        cb:pressed_alpha="false"
+        cb:zdepth="five"
+        cb:icon_drawable="@drawable/ic_action_name"
+        android:id="@+id/lbutton5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_gravity="center" />
 
 
-</FrameLayout>
+
+
+</LinearLayout>
+</ScrollView>
